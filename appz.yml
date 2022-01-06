@@ -22,7 +22,8 @@ volumes:
     mount: /appz/data
     name: data
     size: 5Gi
-    mode: ReadWriteOnce   
+    mode: ReadWriteOnce
+    class: local-storage
     
 properties:
     POSTGRESQL_CONNECTUSER: postgres
