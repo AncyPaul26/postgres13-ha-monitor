@@ -18,7 +18,7 @@ deploy:
     - 5432
     
 volumes:
-  - claim: postgres-ha-data-dev
+  - claim: data-postgres13-ha-monitor-13-x-0
     mount: /appz/data
     name: data
     size: 5Gi
