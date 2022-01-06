@@ -1,7 +1,7 @@
 app:
     name: Postgres HA Monitor
     code: POSTGRESHAMON
-    notify: skumar@ecloudcontrol.com
+    notify: apaul@ecloudcontrol.com
     
 build:
     version: 13.X
@@ -9,9 +9,9 @@ build:
     build_file: none
     output_files: output/*.zip
     image_template: postgres_ha-13.3
-    
+    image_name: myco/postgres_ha
 deploy:
-    context: skumarpi/DEV
+    context: myco/DEV
     type: statefulset
     replicas: 1
     port:
